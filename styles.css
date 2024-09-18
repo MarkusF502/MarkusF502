@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --background-color: #FBFBFE;
+  --header-color: #fff;
+  --background-color: #E8E8E8;
   --text-color: #141414;
-  --h1-color: #121212;
-  --logo-color: #0E0E0E;
+  --h1-color: #290064;
+  --logo-color: #290064;
   --header-border: #E6E6E6;
   --nav-mobile-background: #e0e0e0e7;
-  --secondary-color: #335FF1;
-  --primary-color: #0037EE;
+  --secondary-color: #5900D9;
+  --primary-color: #6200EE;
   --footer-color: #FBFBFE;
   --p-color: #434343;
   --bnt-color: #FBFBFE;
@@ -18,7 +19,7 @@
   --footer-background: #0B0B0B;
   --font-text: 'Poppins';
   --regular-weight: normal;
-  --medium-weight: medium;
+  --medium-weight: 500;
   --semibold-weight: 600;
   --bold-weight: bold;
   --h1-size: 3.4rem;
@@ -37,11 +38,13 @@
 
 .darkmode {
   --background-color: #141414;
-  --text-color: #FBFBFE;
-  --h1-color: #FCFCFE;
-  --logo-color: #FCFCFE;
+  --text-color: #B78AF7;
+  --h1-color: #CEB0FA;
+  --logo-color: #CEB0FA;
   --p-color: #E0E0E0;
+  --secondary-color: #9654F4;
   --nav-mobile-background: #1b1b1be7;
+  --header-color: #0E0E0E;
 }
 
 /* Seletor Universal */
@@ -58,7 +61,7 @@ body {
 }
 
 header {
-  background: var(--background-color);
+  background: var(--header-color);
   position: fixed;
   z-index: 4;
   box-sizing: border-box;
@@ -338,7 +341,7 @@ h5 {
 }
 
 h6 {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: var(--h6-size);
   font-weight: var(--bold-weight);
   text-transform: uppercase;
@@ -372,7 +375,7 @@ p {
   box-shadow: 0px 6px 12px rgba(0, 55, 238, 0.5);
 }
 
-#btn2 {
+.btn2 {
   font-size: var(--btn2-size);
   font-weight: var(--bold-weight);
   text-decoration: none;
@@ -481,9 +484,7 @@ p {
     display: none;
   }
 
-  #cardproject {
-    width: 150px;
-  }
+  
 
   .boxcol2 {
     width: fit-content;
@@ -501,4 +502,53 @@ p {
   .box {
     flex-direction: column;
   }
+}
+
+#img-perfil{
+  border-radius: 50px;
+}
+
+.cardproject {
+  border-radius: 40px;
+  transition: all ease 300ms;
+}
+
+.cardproject:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.tech-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.tech-item {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease-out;
+  font-size: 4rem;
+}
+
+.tech-item p {
+  font-size: 1rem;
+}
+
+
+.tech-item p {
+  margin-top: 0.5rem;
+  color: var(--main-white);
+}
+
+.tecnologias{
+  padding: 20px;
+  text-align: center;
+}
+
+.icon{
+  width: 90px;
+  height: 64px;
 }
