@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Marcos Filipe - Full Stack Developer & QA Engineer">
+  <meta name="author" content="Marcos Filipe Pauferro Marinho">
+  <!-- Mantendo as fontes de ícones que você já usava -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css">
+  <!-- Link para o seu arquivo CSS que vamos atualizar depois -->
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+  <title>Marcos F. | Full Stack Developer</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      Marcos F.
+    </div>
+    <nav id="nav">
+      <button id="btn-mobile">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-menu">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-x">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <ul id="menu">
+        <!-- Navegação agora aponta para páginas separadas -->
+        <li>
+    <a th:href="@{/index}" 
+       class="link-icon-ancora" 
+       th:classappend="${paginaAtiva == 'home'} ? 'active' : ''">Home</a>
+  </li>
+  <li>
+    <a th:href="@{/experience}" 
+       class="link-icon-ancora" 
+       th:classappend="${paginaAtiva == 'experience'} ? 'active' : ''">Experience & Skills</a>
+  </li>
+  <li>
+    <a th:href="@{/projects}" 
+       class="link-icon-ancora" 
+       th:classappend="${paginaAtiva == 'projects'} ? 'active' : ''">Projects</a>
+  </li>
+      </ul>
+    </nav>
+    <div id="trocatema">
+      <!-- Ícones de dark/light mode originais -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-moon">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-sun">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+    </div>
+  </header>
+
+  <main>
+    <section id="sec1">
+      <div class="boxcol">
+        <div class="boxtext01">
+          <h1>Full Stack Developer</h1>
+          <h4>Hi, I'm Marcos Filipe. A Full Stack Developer based in Santos, SP - Brazil.</h4>
+          <p style="margin-top: 15px; font-size: 1.1rem; line-height: 1.6;">
+            I build robust web systems specializing in <strong>Laravel</strong> and <strong>Vue.js</strong>, and validate AI models globally as a QA Engineer. Available for 100% remote opportunities.
+          </p>
+          <div style="margin-top: 20px;">
+             <!-- Link para baixar o currículo na Home -->
+             <a th:href="@{/resume/Marcos_Marinho_Fullstack_Dev_AI.pdf}" download="Resume_Marcos_Filipe.pdf" id="btn1" style="display: inline-block; margin-right: 15px;">
+               Download Resume
+             </a>
+             <a th:href="@{/projects}" id="btn2" class="btn2">
+               View Projects
+             </a>
+          </div>
+        </div>
+        <div class="boxicons" style="margin-top: 25px;">
+          <!-- Links de contato atualizados -->
+          <a href="https://www.linkedin.com/in/marcos-filipe-p-marinho-826774252/" target="_blank">
+            <i class="fab fa-linkedin" style="font-size: 24px;"></i>
+          </a>
+          <a href="https://github.com/MarkusF502" target="_blank">
+            <i class="fab fa-github" style="font-size: 24px;"></i>
+          </a>
+          <a href="mailto:markusfilipe502@gmail.com" target="_blank">
+            <i class="fas fa-envelope" style="font-size: 24px;"></i>
+          </a>
+        </div>
+      </div>
+      <img th:src="@{/img/marcos.png}" alt="Foto de Perfil do Marcos" width="300" id="img-perfil">
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright © 2026. All rights are reserved.</p>
+    <div class="boxicons">
+      <a href="https://www.linkedin.com/in/marcos-filipe-p-marinho-826774252/" target="_blank">
+        <i class="fab fa-linkedin" style="font-size: 24px;"></i>
+      </a>
+      <a href="https://github.com/MarkusF502" target="_blank">
+        <i class="fab fa-github" style="font-size: 24px;"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Link para o seu arquivo JS -->
+  <script th:src="@{/js/script.js}"></script>
+</body>
+
+</html>

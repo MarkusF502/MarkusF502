@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Experience and Skills of Marcos Filipe - Full Stack Developer">
+  <meta name="author" content="Marcos Filipe Pauferro Marinho">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css">
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+  <title>Experience & Skills | Marcos F.</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      Marcos F.
+    </div>
+    <nav id="nav">
+      <button id="btn-mobile">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-menu">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-x">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <ul id="menu">
+        <li>
+    <a th:href="@{/index}" 
+       class="link-icon-ancora" 
+       th:classappend="${paginaAtiva == 'home'} ? 'active' : ''">Home</a>
+  </li>
+  <li>
+    <a th:href="@{/experience}" 
+       class="link-icon-ancora" 
+       th:classappend="${paginaAtiva == 'experience'} ? 'active' : ''">Experience & Skills</a>
+  </li>
+  <li>
+    <a th:href="@{/projects}" 
+       class="link-icon-ancora" 
+       th:classappend="${paginaAtiva == 'projects'} ? 'active' : ''">Projects</a>
+  </li>
+      </ul>
+    </nav>
+    <div id="trocatema">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-moon">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-sun">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+      </svg>
+    </div>
+  </header>
+
+  <main>
+    <section id="sec2">
+      <div class="boxcol" style="margin-bottom: 40px;">
+        <div class="boxtext01">
+          <h6>Career Journey</h6>
+          <h2>Professional Experience</h2>
+        </div>
+        
+        <!-- Job 1 -->
+        <div style="margin-bottom: 30px;">
+          <h3 style="margin-bottom: 5px;">Full Stack Developer</h3>
+          <h4 style="color: #60a5fa; margin-bottom: 10px;">Santos City Hall | Sep 2025 - Present</h4>
+          <p>Developing and maintaining internal systems using PHP (Laravel) for the backend and Vue.js 3 for the frontend. Managing critical MySQL databases and optimizing queries for high-volume data reporting. Assisting in the modernization of legacy applications.</p>
+        </div>
+
+        <!-- Job 2 -->
+        <div style="margin-bottom: 30px;">
+          <h3 style="margin-bottom: 5px;">QA Engineer (Quality Assurance)</h3>
+          <h4 style="color: #60a5fa; margin-bottom: 10px;">Outlier AI | Jul 2025 - Present</h4>
+          <p>Executing rigorous software quality assurance, performing functional testing, and reporting bugs in AI-driven projects. Validating Large Language Model (LLM) outputs to ensure technical accuracy.</p>
+        </div>
+
+        <!-- Job 3 -->
+        <div style="margin-bottom: 30px;">
+          <h3 style="margin-bottom: 5px;">Frontend Engineer & AI Code Evaluator</h3>
+          <h4 style="color: #60a5fa; margin-bottom: 10px;">G2i / Outlier AI | May 2025 - Present</h4>
+          <p>Evaluating AI-generated code with a focus on JavaScript, TypeScript, and React syntax/best practices. Developing code snippets for model training to improve generative AI tools.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tecnologias">
+      <h3>Core Technical Skills</h3>
+      <p>These are the main technologies and tools I use to build robust applications.</p>
+      
+      <div class="tech-list" style="margin-top: 20px;">
+        <div class="tech-item">
+          <i class="devicons devicons-laravel"></i>
+          <p>Laravel</p>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-vuejs"></i>
+          <p>Vue.js 3</p>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-react"></i>
+          <p>React</p>
+        </div>
+        <div class="tech-item">
+          <i class="devicons devicons-php"></i>
+          <p>PHP</p>
+        </div>
+        <div class="tech-item">
+          <i class="devicons devicons-mysql"></i>
+          <p>MySQL</p>
+        </div>
+        <div class="tech-item">
+          <i class="devicons devicons-javascript_badge"></i>
+          <p>TypeScript</p>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-docker"></i>
+          <p>Docker</p>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-microsoft"></i>
+          <p>Azure</p>
+        </div>
+      </div>
+
+      <div class="boxcol" style="margin-top: 50px;">
+        <div class="boxtext01">
+          <h2>Education & Certifications</h2>
+        </div>
+        <ul style="list-style: none; padding-left: 0; margin-top: 15px;">
+          <li style="margin-bottom: 10px;"><strong>BSc in Internet Systems</strong> - FATEC Rubens Lara (Expected Dec 2026)</li>
+          <li style="margin-bottom: 10px;"><strong>Microsoft AZ-900:</strong> Azure Fundamentals (2025)</li>
+          <li style="margin-bottom: 10px;"><strong>NLW Pocket:</strong> Mobile React Native - Rocketseat</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright © 2026. All rights are reserved.</p>
+    <div class="boxicons">
+      <a href="https://www.linkedin.com/in/marcos-filipe-p-marinho-826774252/" target="_blank">
+        <i class="fab fa-linkedin" style="font-size: 24px;"></i>
+      </a>
+      <a href="https://github.com/MarkusF502" target="_blank">
+        <i class="fab fa-github" style="font-size: 24px;"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script th:src="@{/js/script.js}"></script>
+</body>
+
+</html>
