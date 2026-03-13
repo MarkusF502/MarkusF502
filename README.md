@@ -99,15 +99,3 @@ POST /api/projects - Adiciona um novo projeto.
 PUT /api/projects/{id} - Atualiza um projeto existente.
 
 DELETE /api/projects/{id} - Remove um projeto.
-
-🤝 Contato
-
-Criado e mantido por Marcos Filipe Marinho.
-
-LinkedIn: linkedin.com/in/seuperfil
-
-E-mail: markusfilipe502@gmail.com
-
-Portfólio Frontend: [Link para o seu site/frontend]
-
-⭐️ Se este projeto foi útil ou interessante para você, deixe uma estrela no repositório!
